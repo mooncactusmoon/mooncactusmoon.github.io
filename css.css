@@ -3,3 +3,19 @@
     margin:0;
     padding:0;
 }
+.div{
+    height:800px;
+    width: 100%;
+}
+.div1{
+    background-color: burlywood;
+}
+.div2{
+    background-color: cadetblue;
+}
+.div3{
+    background-color: cornsilk;
+}
+footer{
+    height:80px;
+}
