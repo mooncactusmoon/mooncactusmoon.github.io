@@ -13,6 +13,25 @@
 .div2{
     background-color: cadetblue;
 }
+.center{
+    width:460px;
+    height: 460px;
+}
+.tv_span{
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+}
+.tv{
+    width:450px;
+    height:400px;
+    margin: -6px;
+
+}
+.tv_b{
+    width: 440px;
+    height: 360px;
+}
+
 .div3{
     background-color: cornsilk;
 }
