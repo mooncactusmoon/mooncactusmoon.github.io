@@ -7,6 +7,7 @@ main{
     background-color: rgb(247, 217, 155);
 }
 .bar{
+    background-image: url("./img/nav_bg.png");
     width:100%;
     height: 150px;
 }
@@ -23,25 +24,30 @@ main{
     height: 570px;
 }
 .div2{
+    background-image: url("./img/bg.png");
     
 }
 .center{
-    width:455px;
+    /* width:455px; */
+    width:90%;
     height: 480px;
+    /* background-color: blue; */
 }
 .tv_span{
     border-bottom-style:solid;
     border-bottom-width:5px;
 }
 .tv{
-    width:450px;
+    /* width:450px; */
+    width:90%;
     height:360px;
     margin: -6px;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
 
 }
 .tv_b{
-    width: 440px;
+    /* width: 440px; */
+    width: 90%;
     height: 320px;
 }
 
