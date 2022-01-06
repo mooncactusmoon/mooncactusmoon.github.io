@@ -7,6 +7,9 @@ main{
     background-color: rgb(247, 217, 155);
     background-image: url('./img/login_bg.png');
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 .section{
     height: 810px;
 }
