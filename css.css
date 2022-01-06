@@ -63,17 +63,44 @@ main{
     width: 90%;
     height: 320px;
 }
-
 .div3{
     background: linear-gradient(90deg,#552c05 ,#380c00 );
     color:blanchedalmond;
     
 }
+.ex_div{
+    height:350px;
+    overflow: scroll;
+}
+.ex_div::-webkit-scrollbar {
+    display: none;
+}
 .line{
     width: 2px;
     background-color:cornsilk;
 }
+.card a{
+    color: rgb(6, 64, 97);
+    text-shadow: 1px 1px rgb(190, 165, 165), -1px -1px rgb(136, 135, 135);
+    /* color: rgb(220, 209, 245); */
+    font-weight:bold;
+}
+.card a:hover{
+    color: rgb(220, 226, 241);
+    font-size:21.5px;
+}
+.card-header{
+    height: 40px;
+    font-size:20px;
+    margin: -10px;
+}
+.dd{
+    font-size:20px;
+}
+/* .rd{
+     margin-left: -40px 
+} */
 footer{
-    height:80px;
+    height:81px;
     color:rgb(182, 178, 178);
 }
