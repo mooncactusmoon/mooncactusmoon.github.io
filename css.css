@@ -69,6 +69,10 @@ main{
     color:blanchedalmond;
     
 }
+.line{
+    width: 2px;
+    background-color:cornsilk;
+}
 footer{
     height:80px;
     color:rgb(182, 178, 178);
