@@ -71,6 +71,13 @@ main{
     color:blanchedalmond;
     
 }
+.div3-1{
+    height:220px;
+    overflow: scroll;
+}
+.div3-1::-webkit-scrollbar {
+    display: none;
+}
 .ex_div{
     height:350px;
     overflow: scroll;
@@ -83,22 +90,26 @@ main{
     background-color:cornsilk;
 }
 .card a{
-    color: rgb(6, 64, 97);
+    color: rgb(48, 22, 10);
+    
     text-shadow: 1px 1px rgb(190, 165, 165), -1px -1px rgb(136, 135, 135);
     /* color: rgb(220, 209, 245); */
-    font-weight:bold;
+    /* font-weight:bold; */
 }
 .card a:hover{
-    color: rgb(220, 226, 241);
-    font-size:21.5px;
+    color: rgb(6, 64, 97);
+    font-size:20px;
 }
 .card-header{
     height: 40px;
-    font-size:20px;
-    margin: -10px;
+    font-size:18px;
+    margin: -10px; 
+}
+.card-body{
+    color:rgb(48, 3, 3);
 }
 .dd{
-    font-size:20px;
+    font-size:19px;
 }
 /* .rd{
      margin-left: -40px 
