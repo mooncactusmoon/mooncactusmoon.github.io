@@ -74,18 +74,42 @@ main{
 }
 .div3-1{
     height:220px;
-    overflow: scroll;
+    overflow: auto;
 }
 .div3-1::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
+    width:4px;
 }
+.div3-1::-webkit-scrollbar-thumb {
+    background: rgba(102, 86, 56, 0.1); 
+  }
+.div3-1::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3); 
+  }
 .ex_div{
     height:350px;
-    overflow: scroll;
+    overflow: auto;
+    
 }
+/* width */
 .ex_div::-webkit-scrollbar {
-    display: none;
+    width:5px;
+    height:5px;
 }
+/* Track */
+.ex_div::-webkit-scrollbar-track {
+    background: rgba(100, 60, 22, 0.1); 
+  }
+   
+  /* Handle */
+.ex_div::-webkit-scrollbar-thumb {
+    background: rgba(102, 86, 56, 0.1); 
+  }
+  
+  /* Handle on hover */
+.ex_div::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3); 
+  }
 .line{
     width: 2px;
     background-color:cornsilk;
