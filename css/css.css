@@ -173,9 +173,31 @@ marquee {
     font-size: 19px;
 }
 
-/* .rd{
-     margin-left: -40px 
-} */
+.mm{
+    position: relative;
+}
+.mask{
+    position: absolute;
+    background: rgba(17, 17, 17, .7);
+    top: 0;
+    left: 73px;
+    width:350px;
+    height:240px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.mask a,.link a{
+    color:lightcyan;
+}
+.link a:hover{
+    color:rgb(108, 175, 175);
+}
+.mask a:hover{
+    color:rgb(108, 175, 175);
+}
+.mm:hover .mask{
+    opacity: 1;
+}
 footer {
     height: 81px;
     color: rgb(182, 178, 178);
