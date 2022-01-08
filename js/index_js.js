@@ -1,7 +1,7 @@
 var img = ['vote', 'calendar', 'animal', 'band', 'basic', 'en_ani', 'levelc'];
 //自動切換電視
 var now = 0;
-ww() //先執行一次
+// ww() //先執行一次
 if (img.length > 1) {
     setInterval("ww()", 3000); //3000為毫秒 = 3秒
     now = 1;
@@ -25,6 +25,7 @@ $("tr").click(function () {
     // alert(index);
     // console.log("./img/pj/"+img[index]);
     $("#por_img").attr("src", "./img/pj/" + img[index] + ".JPG").attr("alt", img[index]);
+    now=index;
     
 });
 
