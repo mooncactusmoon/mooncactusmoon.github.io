@@ -1,4 +1,22 @@
 var img = ['vote', 'calendar', 'animal', 'band', 'basic', 'en_ani', 'levelc'];
+//自動切換電視
+var now = 0;
+ww() //先執行一次
+if (img.length > 1) {
+    setInterval("ww()", 3000); //3000為毫秒 = 3秒
+    now = 1;
+}
+function ww() {
+    $("#por_img").attr("src","./img/pj/" + img[now] + ".JPG").attr("alt", img[now]);
+    $("tr").removeClass();
+    $("tr").eq(now).addClass("tr_show");
+    now++;
+    if (now >= img.length)
+        now = 0;
+}
+
+// clearInterval(ww());
+
 //點選list切換相對圖片
 $("tr").click(function () {
     $("tr").removeClass();
@@ -7,6 +25,7 @@ $("tr").click(function () {
     // alert(index);
     // console.log("./img/pj/"+img[index]);
     $("#por_img").attr("src", "./img/pj/" + img[index] + ".JPG").attr("alt", img[index]);
+    
 });
 
 //彈跳Modal
