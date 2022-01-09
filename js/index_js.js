@@ -1,11 +1,24 @@
 //網頁慢慢出現(待完成)
 
+//閒置
+var interval; 
+$(document).on('mousemove keyup keypress',function(){ 
+    clearTimeout(interval);//clear it as soon as any event occurs 
+    //do any process and then call the function again 
+    settimeout();//call it again 
+}) 
+
+function settimeout(){ 
+    interval=setTimeout(function(){ 
+    alert("您已經閒置三分鐘了唷"); 
+    },180000) 
+} 
 
 
 var img = ['vote', 'calendar', 'animal', 'band', 'basic', 'en_ani', 'levelc'];
 //自動切換電視
 var now = 1;
-var ww=setInterval(function(){
+var ww=setInterval(function (){
     $("#por_img").attr("src","./img/pj/" + img[now] + ".JPG").attr("alt", img[now]);
         $("tr").removeClass();
         $("tr").eq(now).addClass("tr_show");
