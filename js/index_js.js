@@ -6,7 +6,7 @@ var ww=setInterval(function(){
         $("tr").removeClass();
         $("tr").eq(now).addClass("tr_show");
         $("section").addClass("tv_noise");
-        setTimeout(noise,150);
+        setTimeout(noise,200);
         now++;
         if (now >= img.length){
             now = 0;
@@ -47,7 +47,7 @@ $("tr").click(function () {
     $("#por_img").attr("src", "./img/pj/" + img[index] + ".JPG").attr("alt", img[index]);
     now=index;
     stop();
-    setTimeout(noise,150);
+    setTimeout(noise,200);
 });
 
 //彈跳Modal
