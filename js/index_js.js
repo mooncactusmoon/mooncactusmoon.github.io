@@ -1,3 +1,7 @@
+//網頁慢慢出現(待完成)
+
+
+
 var img = ['vote', 'calendar', 'animal', 'band', 'basic', 'en_ani', 'levelc'];
 //自動切換電視
 var now = 1;
@@ -13,6 +17,7 @@ var ww=setInterval(function(){
         }
 
 },2500);
+
 
 //停止自動切換電視
 var stop = function(){

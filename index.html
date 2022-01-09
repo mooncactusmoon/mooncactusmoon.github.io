@@ -13,12 +13,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
 </head>
 
 <body>
   <main class="container-fluid">
     <!-- nav -->
-    <div class="row shadow">
+    <div class="row shado">
       <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
         <a class="navbar-brand" href="#"><img src="./img/logo1.png" alt="logo" width="35px" height="35px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,8 +41,8 @@
                 Subject
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#left">left</a>
-                <a class="dropdown-item" href="#center">center</a>
+                <a class="dropdown-item" href="#list">list</a>
+                <a class="dropdown-item" href="#portfolio">portfolio</a>
                 <!-- <div class="dropdown-divider"></div> -->
                 <a class="dropdown-item" href="#about">about</a>
                 <a class="dropdown-item" href="#experience">experience</a>
@@ -71,42 +72,42 @@
     <!-- 技能排 end -->
     <div class="row">
       <!-- 左版 -->
-      <div class="col-sm-12 col-lg-2 col-md-3 div1 div text-center p-1" id="left">
+      <div class="col-sm-12 col-lg-2 col-md-3 div1 div text-center p-1" id="list">
         <div class="div1-1 rounded-lg m-1">
           <br>
-          <div class="font-weight-bolder h3">
-            LIST
-          </div>
+          <h2 class="font-weight-bolder">
+            L I S T
+          </h2>
           <div class="text-left p-1">
             <a href="#center" style="text-decoration:none">
               <table class="table table-hover table-borderless">
                 <tr class="tr_show">
                   <td>01</td>
-                  <td>The_vote</td>
+                  <td>The vote</td>
                 </tr>
                 <tr>
                   <td>02</td>
-                  <td>Perpetual_calendar</td>
+                  <td>Perpetual calendar</td>
                 </tr>
                 <tr>
                   <td>03</td>
-                  <td>Animal_park</td>
+                  <td>Animal park</td>
                 </tr>
                 <tr>
                   <td>04</td>
-                  <td>The_band</td>
+                  <td>The band</td>
                 </tr>
                 <tr>
                   <td>05</td>
-                  <td>The_program</td>
+                  <td>The program</td>
                 </tr>
                 <tr>
                   <td>06</td>
-                  <td>EN_animail</td>
+                  <td>EN animail</td>
                 </tr>
                 <tr>
                   <td>07</td>
-                  <td>LevelC_01</td>
+                  <td>LevelC 01</td>
                 </tr>
               </table>
             </a>
@@ -117,7 +118,7 @@
       <!-- 左版 end -->
 
       <!-- 中間主呈現 -->
-      <div class="col-sm-12 col-lg-7 col-md-9 div2 div" id="center">
+      <div class="col-sm-12 col-lg-7 col-md-9 div2 div" id="portfolio">
         <!-- tv -->
         <div class="center mx-auto mt-1">
           <br>
@@ -131,27 +132,28 @@
             <div class="row">
               <div class="mx-auto text-warning">。。。</div>
             </div>
-            
-              <div class="tv_b bg-light mx-auto border border-dark rounded position-relative">
 
-                <p class="position-absolute text-dark bg-light h4 mt-2 ml-2 rounded"><i
-                    class="fas fa-laptop-code"></i><ins>PORTFOLIO</ins></p>
-                <marquee class="h5 position-absolute text-warning"><b>畫面呈現比例僅供參考，點擊此圖有更詳細的說明唷:></b></marquee>
-                <!-- 這裡放作品集縮圖 -->
-                <img id="por_img" src="./img/pj/vote.JPG" alt="vote" width="100%" height="100%" data-toggle="modal"
-                  data-target="#myModal">
-                  <!-- 雜訊 -->
-                  <section class=""></section>
-                  <svg>
-                    <filter id="noise">
-                      <feTurbulence id="turbulence">
-                        <animate attributeName="baseFrequency" dur="60s" values="0.9 0.9;0.8 0.8;0.9 0.9;" repeatCount="indefinite"></animate>
-                      </feTurbulence>
-                      <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
-                    </filter>
-                  </svg>
-              </div>
-           
+            <div class="tv_b bg-light mx-auto border border-dark rounded position-relative">
+
+              <p class="position-absolute h4 mt-2 ml-2 rounded por"><i
+                  class="fas fa-laptop-code"></i><ins>PORTFOLIO</ins></p>
+              <marquee class="h5 position-absolute text-warning"><b>畫面呈現比例僅供參考，點擊此圖有更詳細的說明唷:></b></marquee>
+              <!-- 這裡放作品集縮圖 -->
+              <img id="por_img" src="./img/pj/vote.JPG" alt="vote" width="100%" height="100%" data-toggle="modal"
+                data-target="#myModal">
+              <!-- 雜訊 -->
+              <section class=""></section>
+              <svg>
+                <filter id="noise">
+                  <feTurbulence id="turbulence">
+                    <animate attributeName="baseFrequency" dur="60s" values="0.9 0.9;0.8 0.8;0.9 0.9;"
+                      repeatCount="indefinite"></animate>
+                  </feTurbulence>
+                  <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+                </filter>
+              </svg>
+            </div>
+
             <div class="row">
               <div class="ml-3 text-warning">。。。</div>
             </div>
@@ -179,7 +181,7 @@
             </div>
           </div>
           <div class="col-4 p-3 text-center">
-            <p class="h2 my-auto">ABOUT</p>
+            <p class="h2 my-auto ">ABOUT</p>
             <img src="./img/cactus.png" alt="myPhoto" width="90px" height="80px">
             Cactus月
             <div class="p-1 link">
