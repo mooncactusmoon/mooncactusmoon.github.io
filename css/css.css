@@ -211,6 +211,15 @@ marquee {
 .mm{
     position: relative;
 }
+.mm-d{
+    left:80px;
+    top:200px;
+    width:40px;
+    height:40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all .5s ease;
+}
+
 .mask{
     position: absolute;
     background: rgba(17, 17, 17, .7);
@@ -233,6 +242,22 @@ marquee {
 .mm:hover .mask{
     opacity: 1;
 }
+
+.fa-angle-double-left,.fa-angle-double-right,.fa-times-circle{
+    color:rgb(201, 166, 138);
+}
+.fa-times-circle:hover{
+    transform: rotate(90deg);
+    transition: all .5s ease;
+    color:rgb(109, 52, 5);
+}
+.fa-angle-double-left:hover{
+    color:rgb(141, 95, 57);
+}
+.fa-angle-double-right:hover{
+    color:rgb(141, 95, 57);
+}
+
 footer {
     height: 81px;
     color: rgb(182, 178, 178);
