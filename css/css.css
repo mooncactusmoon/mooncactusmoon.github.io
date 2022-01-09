@@ -23,26 +23,35 @@ main {
     text-shadow: -1px -1px 0px rgb(255, 255, 255),
     3px 3px 0px rgb(202, 214, 228),
     3px 3px 0px rgb(202, 214, 228);
-
-
 }
 .h1,h2, .h3 {
     color: rgb(4, 4, 61);
     text-shadow: 1px 1px white, -1px -1px #444;
-    
+}
+@keyframes dong { 
+    0% {             
+        transform: translate(0px, 0px);            
+     }            
+     50% {                
+        transform: translate(-3px, -5px);            
+     }            
+     100% {                
+        transform: translate(0px, 0px);
+     }
 }
 .h2{
     color: rgb(198, 224, 255);
     text-shadow: -1px -1px 0px rgb(73, 90, 110),
     3px 3px 0px rgb(73, 90, 110),
     6px 6px 0px rgb(73, 90, 110);
-
+    animation: dong 3s infinite;
 }
 
 .sk_img {
     border: 5px solid rgba(32, 29, 29, 0.8);
 }
 
+/* list */
 .div {
     height: 650px;
     width: 100%;
@@ -61,20 +70,34 @@ main {
 }
 .tr_show{
     background:rgba(255, 255, 255, 0.2);
+    /* animation: trr 3s infinite; */
 }
+/* @keyframes trr { 
+    0% {             
+        transform: translate(0px, 5px);           
+     }            
+     50% {                
+        transform: translate(0px, 0px);            
+     }            
+     100% {                
+        transform: translate(0px, 0px); 
+     }
+} */
 tr{
     font-size:18px;
     color:rgb(68, 29, 3);
     text-shadow: 1px 1px white, -1px -1px #444;
+    transition: all .3s ease;
 }
-tr:hover{
-    text-shadow: 1px 1px white, -1px -1px #444;
-}
+/* list end */
+
+
+/* tv */
+
 .div2 {
     background-image: url("../img/bg.png");
 
 }
-
 .center {
     /* width:455px; */
     width: 90%;
@@ -85,7 +108,6 @@ tr:hover{
     border-bottom-style: solid;
     border-bottom-width: 5px;
 }
-
 .tv {
     /* width:450px; */
     width: 90%;
@@ -120,13 +142,15 @@ svg{
     width: 90%;
     height: 320px;
 }
-
 marquee {
     right: 0;
     bottom: -8px;
     background: rgba(0, 0, 0, 0.4);
 }
+/* tv end */
 
+
+/* about & experience */
 .div3 {
     background: linear-gradient(90deg, #552c05, #380c00);
     color: blanchedalmond;
@@ -136,16 +160,13 @@ marquee {
     height: 220px;
     overflow: auto;
 }
-
 .div3-1::-webkit-scrollbar {
     /* display: none; */
     width: 4px;
 }
-
 .div3-1::-webkit-scrollbar-thumb {
     background: rgba(102, 86, 56, 0.1);
 }
-
 .div3-1::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.3);
 }
@@ -154,33 +175,46 @@ marquee {
     height: 350px;
     overflow: auto;
 }
-
 /* width */
 .ex_div::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
-
 /* Track */
 .ex_div::-webkit-scrollbar-track {
     background: rgba(100, 60, 22, 0.1);
 }
-
 /* Handle */
 .ex_div::-webkit-scrollbar-thumb {
     background: rgba(102, 86, 56, 0.1);
 }
-
 /* Handle on hover */
 .ex_div::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.3);
 }
-
+.dd {
+    font-size: 19px;
+}
 .line {
     width: 2px;
     background-color: cornsilk;
 }
+.fa-github,.fa-envelope,.fa-instagram{
+    transition: all .5s ease;
+}
+.fa-github:hover{
+    transform: rotate(-30deg);
+}
+.fa-envelope:hover{
+    transform: rotate(-30deg);
+}
+.fa-instagram:hover{
+    transform: rotate(-30deg);
+}
+/* about & experience  end*/
 
+
+/* modal */
 .card a {
     color: rgb(48, 22, 10);
 
@@ -188,7 +222,6 @@ marquee {
     /* color: rgb(220, 209, 245); */
     /* font-weight:bold; */
 }
-
 .card a:hover {
     color: rgb(6, 64, 97);
     font-size: 20px;
@@ -199,13 +232,8 @@ marquee {
     font-size: 18px;
     margin: -10px;
 }
-
 .card-body {
     color: rgb(48, 3, 3);
-}
-
-.dd {
-    font-size: 19px;
 }
 
 .mm{
@@ -235,7 +263,9 @@ marquee {
 }
 .link a:hover{
     color:rgb(108, 175, 175);
+    
 }
+
 .mask a:hover{
     color:rgb(108, 175, 175);
 }
@@ -245,10 +275,10 @@ marquee {
 
 .fa-angle-double-left,.fa-angle-double-right,.fa-times-circle{
     color:rgb(201, 166, 138);
+    transition: all .5s ease;
 }
 .fa-times-circle:hover{
     transform: rotate(90deg);
-    transition: all .5s ease;
     color:rgb(109, 52, 5);
 }
 .fa-angle-double-left:hover{
@@ -257,6 +287,8 @@ marquee {
 .fa-angle-double-right:hover{
     color:rgb(141, 95, 57);
 }
+/* modal end*/
+
 
 footer {
     height: 81px;
