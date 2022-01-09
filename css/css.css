@@ -93,7 +93,9 @@ tr:hover{
     margin: -6px;
     background: linear-gradient(90deg, #505050, #383838);
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
-
+}
+.tv:hover{
+    background: rgb(177, 177, 177);
 }
 .tv_noise{
     position: absolute;
@@ -105,8 +107,7 @@ tr:hover{
     height: 306px;
     /* width: calc(100% + 50px);
     height: calc(320px + 50px); */
-    background:repeating-linear-gradient(#111,#111 50%,#fff 50%,#fff);
-   
+    background:repeating-linear-gradient(#111,#111 50%,#fff 50%,#fff); 
     background-size:5px 5px;
     filter: url("#noise");
 }
@@ -129,7 +130,6 @@ marquee {
 .div3 {
     background: linear-gradient(90deg, #552c05, #380c00);
     color: blanchedalmond;
-
 }
 
 .div3-1 {
@@ -153,7 +153,6 @@ marquee {
 .ex_div {
     height: 350px;
     overflow: auto;
-
 }
 
 /* width */
