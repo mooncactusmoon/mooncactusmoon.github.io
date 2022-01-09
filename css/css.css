@@ -50,6 +50,13 @@ main {
 .sk_img {
     border: 5px solid rgba(32, 29, 29, 0.8);
 }
+.sk_i{
+    /* transition: all .3s ease; */
+}
+.sk_i:hover{
+    animation: dong 1s infinite;
+}
+
 
 /* list */
 .div {
