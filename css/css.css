@@ -118,6 +118,7 @@ tr{
 }
 .tv:hover{
     background: rgb(177, 177, 177);
+    cursor:pointer;
 }
 .tv_noise{
     position: absolute;
