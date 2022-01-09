@@ -79,36 +79,37 @@
           </div>
           <div class="text-left p-1">
             <a href="#center" style="text-decoration:none">
-            <table class="table table-hover table-borderless">
-              <tr class="tr_show">
-                <td>01</td>
-                <td>The_vote</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>Perpetual_calendar</td>
-              </tr>
-              <tr>
-                <td>03</td>
-                <td>Animal_park</td>
-              </tr>
-              <tr>
-                <td>04</td>
-                <td>The_band</td>
-              </tr>
-              <tr>
-                <td>05</td>
-                <td>The_program</td>
-              </tr>
-              <tr>
-                <td>06</td>
-                <td>EN_animail</td>
-              </tr>
-              <tr>
-                <td>07</td>
-                <td>LevelC_01</td>
-              </tr>
-            </table></a>
+              <table class="table table-hover table-borderless">
+                <tr class="tr_show">
+                  <td>01</td>
+                  <td>The_vote</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Perpetual_calendar</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Animal_park</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>The_band</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>The_program</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>EN_animail</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>LevelC_01</td>
+                </tr>
+              </table>
+            </a>
           </div>
         </div>
 
@@ -130,14 +131,27 @@
             <div class="row">
               <div class="mx-auto text-warning">。。。</div>
             </div>
-            <div class="tv_b bg-light mx-auto border border-dark rounded position-relative">
-              <p class="position-absolute text-dark bg-light h4 mt-2 ml-2 rounded"><i
-                  class="fas fa-laptop-code"></i><ins>PORTFOLIO</ins></p>
-              <marquee class="h5 position-absolute text-warning"><b>畫面呈現比例僅供參考，點擊此圖有更詳細的說明唷:></b></marquee>
-              <!-- 這裡放作品集縮圖 -->
-              <img id="por_img" src="./img/pj/vote.JPG" alt="vote" width="100%" height="100%" data-toggle="modal"
-                data-target="#myModal">
-            </div>
+            
+              <div class="tv_b bg-light mx-auto border border-dark rounded position-relative">
+
+                <p class="position-absolute text-dark bg-light h4 mt-2 ml-2 rounded"><i
+                    class="fas fa-laptop-code"></i><ins>PORTFOLIO</ins></p>
+                <marquee class="h5 position-absolute text-warning"><b>畫面呈現比例僅供參考，點擊此圖有更詳細的說明唷:></b></marquee>
+                <!-- 這裡放作品集縮圖 -->
+                <img id="por_img" src="./img/pj/vote.JPG" alt="vote" width="100%" height="100%" data-toggle="modal"
+                  data-target="#myModal">
+                  <!-- 雜訊 -->
+                  <section class=""></section>
+                  <svg>
+                    <filter id="noise">
+                      <feTurbulence id="turbulence">
+                        <animate attributeName="baseFrequency" dur="50s" values="0.9 0.9;0.8 0.8;0.9 0.9;" repeatCount="indefinite"></animate>
+                      </feTurbulence>
+                      <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+                    </filter>
+                  </svg>
+              </div>
+           
             <div class="row">
               <div class="ml-3 text-warning">。。。</div>
             </div>
