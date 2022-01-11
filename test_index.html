@@ -17,26 +17,60 @@
 </head>
 
 <body>
-    <div class="aside text-light">
-        <p class="">FANG JU</p>
-        <p>about</p>
-        <p>portfolio</p>
-        <p>skill</p>
-        <p>content</p>
-        <p>login</p>
-    </div>
-    <button class="open_b text-light">:D</button>
-    <button class="close_b text-light">:|</button>
-    <div class="container_fluid">
-        <div class="row bg-info d-flex" style="height:1000px">
-            <p class="m-auto">您好, 我是 ___</p>
+    <!-- aside -->
+    <div class="aside text-light text-center">
+        <p class="h1 my-3">FANG JU</p>
+        <!-- photo & icon -->
+        <img class="my-3 rounded-circle" src="./img/147619.jpg" alt="" width="100px" height="100px">
+        <div class="p-1 link mb-5">
+            <a href="https://github.com/mooncactusmoon"><i class="fab fa-github fa-3x m-1"></i></a>
+            <a href="mailto:sweet5942smile@gmail.com"><i class="fas fa-envelope fa-3x m-1"></i></a>
+            <a href="https://www.instagram.com/s_moon_lin/"><i class="fab fa-instagram fa-3x m-1"></i></a>
         </div>
+        <!-- photo & icon end -->
+        <a href="#about" class="h4 p-3 my-2 nav">
+            <p>ABOUT</p>
+        </a>
+        <a href="#portfolio" class="h4 p-3 my-2 nav">
+            <p>PORTFOLIO</p>
+        </a>
+        <a href="#skill" class="h4 p-3 my-2 nav">
+            <p>SKILL</p>
+        </a>
+        <a href="#content" class="h4 p-3 my-2 nav">
+            <p>CONTENT</p>
+        </a>
+        <a href="#" class="h4 p-3 my-2 nav">
+            <p>LOGIN</p>
+        </a>
+    </div>
+    <!-- aside end -->
+    <!-- button -->
+    <button class="open_b text-light rounded"><i class="fas fa-bars"></i></button>
+    <button class="close_b text-light rounded"><i class="fas fa-eye-slash"></i></button>
+    <!-- button end -->
+    <div class="container_fluid">
+        <div class="row top d-flex">
+            <p class="m-auto bg-light">您好, 我是 ___</p>
+        </div>
+
         <div class="row">
             <div class="col-8 mx-auto main">
-                <div class="w-75 bg-warning" style="height:400px">about</div>
-                <div class="w-75 bg-dark" style="height:400px">portfolio</div>
-                <div class="w-75 bg-primary" style="height:400px">skill</div>
-                <div class="w-75 bg-info" style="height:400px">content</div>
+                <!-- about -->
+                <div id="about" class="w-75 bg-warning" style="height:400px">about</div>
+                <!-- about end -->
+
+                <!-- portfolio -->
+                <div id="portfolio" class="w-75 bg-dark" style="height:400px">portfolio</div>
+                <!-- portfolio end -->
+
+                <!-- skill -->
+                <div id="skill" class="w-75 bg-primary" style="height:400px">skill</div>
+                <!-- skill end-->
+
+                <!-- content -->
+                <div id="content" class="w-75 bg-info" style="height:400px">content</div>
+                <!-- content end -->
             </div>
         </div>
     </div>
@@ -47,10 +81,10 @@
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="./js/jq.js"></script>
     <script src="./js/test_js.js"></script>
 </body>
