@@ -101,10 +101,12 @@ tr{
 
 
 /* tv */
+.div1_2{
 
+    background-image: url("../img/nav_bg.png");
+}
 .div2 {
-    background-image: url("../img/bg.png");
-
+    /* background-image: url("../img/bg.png"); */
 }
 .center {
     /* width:455px; */
