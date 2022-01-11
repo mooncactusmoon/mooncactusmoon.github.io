@@ -11,7 +11,7 @@ $(document).ready(function(){
     $(".aside,.close_b").hide();
 
     $(".open_b").mouseover(function(){
-        $(this).find("i").removeClass("fa-bars").addClass("fa-arrow-right");
+        $(this).find("i").removeClass("fa-bars").addClass("fa-arrow-left");
     })
     $(".open_b").mouseout(function(){
         $(this).find("i").removeClass("fa-arrow-right").addClass("fa-bars");
