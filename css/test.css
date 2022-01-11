@@ -1,27 +1,29 @@
-
 .aside{
     position: fixed;
     background-color: rgb(50, 50, 51);
     top:0;
     left:0;
-    width: 200px;
+    width: 300px;
     height:auto;
-
 }
-.b1{
+.open_b{
     position: fixed;
-    background-color: rgb(50, 50, 51);
+    background-color: rgb(48, 48, 192);
     bottom:30px;
     left:30px;
+    width:30px;
+    height:30px;
 }
-.b2{
+.close_b{
     position: fixed;
-    background-color: rgb(50, 50, 51);
+    background-color: rgb(48, 48, 192);
     bottom:30px;
     left:30px;
+    width:30px;
+    height:30px;
 }
 .main{
-    /* height:915px; */
+
     background-color: rgb(248, 236, 220);
     overflow:auto;
 

@@ -1,19 +1,19 @@
-
 $(document).ready(function(){
-
+    var h=$(window).height();//抓視窗高度
+    $(".aside").css("height",h+"px"); 
     // $(".aside").fadeOut();
-    $(".aside,.b2").hide();
+    $(".aside,.close_b").hide();
 
-    $(".b1").click(function(){
+    $(".open_b").click(function(){
         console.log("AA");
-        $(".aside,.b2").fadeIn();
-        $(".b1").hide;
+        $(".aside,.close_b").fadeIn();
+        $(".open_b").hide;
 
     })
-    $(".b2").click(function(){
+    $(".close_b").click(function(){
         console.log("AA");
-        $(".aside,.b2").fadeOut();
-        $(".b2").hide;
+        $(".aside,.close_b").fadeOut();
+        $(".close_b").hide;
 
     })
 });
