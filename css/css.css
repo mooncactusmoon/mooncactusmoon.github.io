@@ -39,7 +39,8 @@ main {
         transform: translate(0px, 0px);
      }
 }
-.h2{
+.hh{
+    font-size: 60px;
     color: rgb(198, 224, 255);
     text-shadow: -1px -1px 0px rgb(73, 90, 110),
     3px 3px 0px rgb(73, 90, 110),
@@ -165,7 +166,7 @@ marquee {
 }
 
 .div3-1 {
-    height: 220px;
+    /* height: 220px; */
     overflow: auto;
 }
 .div3-1::-webkit-scrollbar {
@@ -179,27 +180,27 @@ marquee {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.ex_div {
+/* .ex_div {
     height: 350px;
     overflow: auto;
-}
+} */
 /* width */
-.ex_div::-webkit-scrollbar {
+/* .ex_div::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-}
+} */
 /* Track */
-.ex_div::-webkit-scrollbar-track {
+/* .ex_div::-webkit-scrollbar-track {
     background: rgba(100, 60, 22, 0.1);
-}
+} */
 /* Handle */
-.ex_div::-webkit-scrollbar-thumb {
+/* .ex_div::-webkit-scrollbar-thumb {
     background: rgba(102, 86, 56, 0.1);
-}
+} */
 /* Handle on hover */
-.ex_div::-webkit-scrollbar-thumb:hover {
+/* .ex_div::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.3);
-}
+} */
 .dd {
     font-size: 19px;
 }
