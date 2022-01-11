@@ -59,11 +59,13 @@ main{
     /* overflow:auto; */
 
 }
-.top{
-    background:url("../img/top.jpg") no-repeat;
+#top{
+    background:url("../img/top.jpg") ;
+    background-position: center;
     background-size: cover;
-    min-height: 100%;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
     /* min-width: 100%; */
-    /* background-position:center center; */
 
 }
