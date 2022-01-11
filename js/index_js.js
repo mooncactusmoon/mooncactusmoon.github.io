@@ -6,9 +6,19 @@ $(document).on('mousemove keyup keypress',function(){
     settimeout();//call it again 
 }) 
 
-function settimeout(){ 
+function settimeout(){ //閒置一段時間跳一次電視
     interval=setTimeout(function(){ 
-    alert("您已經閒置三分鐘了唷"); 
+    // console.log("已經閒置三分鐘了唷");
+    $("#por_img").attr("src","./img/pj/" + img[now] + ".JPG").attr("alt", img[now]);
+        $("tr").removeClass();
+        $("tr").eq(now).addClass("tr_show");
+        $("section").addClass("tv_noise");
+        setTimeout(noise,200);
+        now++;
+        if (now >= img.length){
+            now = 0;
+        }
+
     },180000) 
 } 
 
