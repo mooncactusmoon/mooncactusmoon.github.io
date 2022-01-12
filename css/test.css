@@ -1,6 +1,7 @@
 .container{
     /* background: rgba(255,255,255,.3); */
     color:rgb(2, 53, 40);
+    text-shadow: -1px -1px white, 0px 0px #333;
 }
 .main{
     background: rgba(255,255,255,.8);
@@ -56,6 +57,10 @@ header{
     3px 3px 0px rgb(134, 161, 140),
     6px 6px 0px rgb(134, 161, 140);
     animation: dong 2s infinite;
+}
+img{
+    box-shadow:3px 3px 10px rgb(51, 51, 51);
+    
 }
 .i{
     transition: all .5s ease;
@@ -124,6 +129,7 @@ header{
 .mask{
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 12px 1px rgb(0, 0, 0);
     top: 0;
     left: 0px;
     height:225px;
@@ -153,7 +159,9 @@ header{
     font-size:30px;
 }
 
-
+.card{
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0,0.8);
+}
 footer{
     color:rgb(65, 65, 65);
     height:80px;

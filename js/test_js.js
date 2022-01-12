@@ -32,4 +32,25 @@ $(document).ready(function(){
         $(".close_b").hide;
 
     })
+
+    $("#all_por").click(function(){
+        $(".all_por").hide();
+        $(".all_por").fadeIn();
+    });
+
+    $("#f_por").click(function(){
+        $(".all_por").hide();
+        $(".f_por").fadeIn();
+    });
+
+    $("#b_por").click(function(){
+        $(".all_por").hide();
+        $(".b_por").fadeIn();
+    });
+    $("#p_por").click(function(){
+        $(".all_por").hide();
+        $(".p_por").fadeIn();
+    });
+
+
 });
