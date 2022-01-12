@@ -4,6 +4,10 @@ $(document).ready(function(){
     
     $(".top").css("height",h+"px"); 
     $(".top").css("width",w+"px"); 
+    $(".title").css("height",h+"px"); 
+    $(".title").parent().css("opacity",0); 
+    $(".title").parent().animate({opacity:1},2000,function(){}); 
+
 
     
     $(".aside").css("height",h+"px"); 

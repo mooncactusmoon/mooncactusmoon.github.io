@@ -1,3 +1,14 @@
+.container{
+    background: rgba(255,255,255,.3);
+}
+.main{
+    background: rgba(255,255,255,.7);
+
+}
+li{
+    list-style: none;
+    margin: 5px 0;
+}
 .aside{
     position: fixed;
     background-color: rgb(50, 50, 51);
@@ -9,21 +20,41 @@
 }
 .open_b{
     position: fixed;
-    background-color: rgba(87, 87, 87,0.5);
+    background-color: rgb(203, 245, 219);
     bottom:30px;
     right:30px;
     width:40px;
     height:40px;
     z-index: 995;
+    color:rgb(2, 51, 21);
 }
 .close_b{
     position: fixed;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(87,87,87);
     bottom:30px;
     right:30px;
     width:40px;
     height:40px;
     z-index: 999;
+}
+@keyframes dong { 
+    0% {             
+        transform: translate(0px, 0px);            
+     }            
+     50% {                
+        transform: translate(0px, 10px);            
+     }            
+     100% {                
+        transform: translate(0px, 0px);
+     }
+}
+header{
+    font-size: 60px;
+    color:rgb(3, 53, 14);
+    text-shadow: -1px -1px 0px rgb(134, 161, 140),
+    3px 3px 0px rgb(134, 161, 140),
+    6px 6px 0px rgb(134, 161, 140);
+    animation: dong 2s infinite;
 }
 .i{
     transition: all .5s ease;
@@ -62,8 +93,13 @@
     /* 螢幕可見範圍寬度的百分比 */
     width: 100vw; 
     height: 100vh;
+    overflow:auto;
 
 }
+#top::-webkit-scrollbar {
+    display: none;
+}
+
 .por_div{
     position: relative;
     height:225px;
@@ -93,4 +129,15 @@
 }
 .mask a:hover{
     color:rgb(108, 175, 175);
+}
+.card-body li:hover{
+    color:#ffe4e1;
+    font-size:30px;
+}
+
+
+footer{
+    color:rgb(65, 65, 65);
+    height:80px;
+    
 }
