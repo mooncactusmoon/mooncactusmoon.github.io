@@ -47,9 +47,9 @@ $(document).ready(function(){
         $(".all_por").hide();
         $(".b_por").fadeIn();
     });
-    $("#p_por").click(function(){
+    $("#d_por").click(function(){
         $(".all_por").hide();
-        $(".p_por").fadeIn();
+        $(".d_por").fadeIn();
     });
 
 
