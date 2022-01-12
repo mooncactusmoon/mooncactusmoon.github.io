@@ -1,0 +1,276 @@
+$title_color: #173b6c
+    
+*
+    box-sizing: border-box
+    // border: 1px solid #000
+    
+html, body
+    padding: 0
+    margin: 0
+    height: 100%
+
+body
+    // background-color: #f5f8fd
+
+.container 
+    margin: auto
+    padding: 0 15px
+    max-width: 1500px
+
+    @media (min-width: 576px) 
+        max-width: 540px;
+
+    @media (min-width: 768px)
+        max-width: 720px;
+
+    @media (min-width: 992px) 
+        max-width: 960px;
+
+    @media (min-width: 1200px) 
+        max-width: 1140px;
+
+    @media (min-width: 1440px) 
+        max-width: 1400px;
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 4rem
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 1px
+    position: sticky
+    top: 0
+    background-color: white
+    transition: all 1s ease
+    z-index: 99
+    div
+        .logo
+            margin: 0 3rem 
+            font-weight: 900
+            font-size: 1.5rem
+            color: #149ddd
+        .icon
+            display: none
+            font-size: 1.5rem
+            text-decoration: none
+            color: #09777d
+    .menu
+        list-style-type: none
+        display: flex
+        margin-right: 3rem 
+        margin: auto 3rem
+        padding: 0
+        font-size: 1.1rem
+        li
+            margin: 0 .7rem
+            a
+                color: #09777d
+                text-decoration: no
+
+
+@media (max-width: 800px)
+    .nav-flex
+        display: block
+        position: relative
+        div 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            height: 64px
+            .icon
+                display: inline-block
+                float: right
+                margin: auto 2rem
+        .menu
+            display: none
+        .menu.responsive
+            display: block
+            li
+                display: block
+                margin: .5rem auto
+
+
+.about
+    margin: 0
+    min-height: 100vh
+    display: flex
+    .intro
+        padding: 2rem
+        display: flex
+        justify-content: space-around
+        .intro_myself
+            // min-height: 400px
+            flex-flow: wrap
+            margin: 3rem 
+            justify-content: center
+            h1
+                position: relative
+                padding: 5px 0
+                color: $title_color
+                font-size: 5rem
+            h4
+                font-weight: bold
+                margin: 1rem
+                font-size: 3rem
+            ul 
+                margin: 0
+                padding: 0
+                list-style-type: none
+                display: flex
+                li
+                    i
+                        margin: 1rem
+                        font-size: 2rem
+        .img    
+            display: flex
+            justify-content: center
+            align-items: center
+@media (max-width: 1300px)
+    .about
+        margin: 0
+        display: flex
+        .intro
+            align-items: center
+            flex-flow: wrap column-reverse
+@media (max-width: 1000px)
+    .about
+        .intro
+            .intro_myself
+                h1
+                    font-size: 4rem
+                h4
+                    font-size: 3.5rem
+@media (max-width: 800px)
+    .about
+        margin: 0
+        display: flex
+        .intro
+            padding: 0
+            align-items: center
+            flex-flow: wrap column-reverse
+            .intro_myself
+                h1
+                    font-size: 2rem
+                h4
+                    font-size: 1.5rem
+                ul 
+                    justify-content: center
+                    li
+                        i
+                            margin: 1rem
+                            font-size: 1rem
+
+.portfolio-page
+    background-color: #f5f8fd
+    main
+        margin: auto
+        .intro
+            padding: 2rem
+            display: flex
+            h2
+                color: $title_color
+                position: relative
+                padding: 5px 0
+                &:after
+                    content: ""
+                    position: absolute
+                    width: 50px
+                    height: 3px
+                    background-color: #149ddd
+                    bottom: 0
+                    left: 0
+                    display: block
+            p 
+                font-weight: bold
+                // line-height: 1.2
+        .list-menu
+            display: flex
+            ul.protfolio-list-menu
+                list-style-type: none
+                display: flex
+                justify-content: center
+                padding: 0
+                margin: 0 auto
+                background-color: #fff
+                border-radius: 50px
+                height: 35px
+                align-items: center
+            li
+                margin: 0 .7rem
+                width: 5rem
+                text-align: center
+                cursor: pointer
+
+
+        ul.protfolio-list
+            list-style-type: none
+            display: grid
+            padding: 2rem 3rem
+            margin: auto
+            grid-gap: 10px
+            min-height: 100vh
+            width: 100%
+            // border: 1px solid #000
+            justify-items: center
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr))
+            grid-template-rows: repeat(auto-fit, minmax(25%, 1fr))
+            grid-template-areas: "grid_1 big big" "grid_2 big big" "grid_3 grid_4 grid_5" "grid_6 grid_7 grid_8"
+            li
+                width: 100%
+                height: 100%
+                border: 1px solid rgba(0, 0, 0, .3)
+                border-radius: 4px
+                overflow: hidden
+
+                &:hover a
+                        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        transform: scale(1.03)
+                a
+                    display: inline-block
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all 0.2s ease
+
+
+        @for $i from 1 through 8
+            .grid_#{$i}
+                grid-area: grid_#{$i}
+
+        .grid_1
+            background: url("./img/guess.png")
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 110%
+        .grid_2
+            background: url("./img/weather.png")
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 110%
+        .b
+            grid-area: big
+            background: url("./img/vote.png")
+            background-size: 100%
+            background-repeat: no-repeat
+
+
+// .contact 
+//     .form
+//         width: 100%
+//         height: 200px
+//         border: 1px solid #000
+//         margin: auto
+//         .flex
+//             display: flex
+//             justify-content: center
+//             section 
+//                 display: flex
+//                 label 
+//                     width: 30%
+//                 input 
+//                     width: 100%
+                
+//             p
+//                 margin: auto
+

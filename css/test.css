@@ -53,19 +53,44 @@
     background-color: rgb(77, 78, 78);
 
 }
-main{
-
-    background-color: rgb(248, 236, 220);
-    /* overflow:auto; */
-
-}
 #top{
     background:url("../img/top.jpg") ;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
+    /* 背景不隨著滾輪改變 */
+    background-attachment: fixed; 
+    /* 螢幕可見範圍寬度的百分比 */
+    width: 100vw; 
     height: 100vh;
-    /* min-width: 100%; */
 
+}
+.por_div{
+    position: relative;
+    height:225px;
+    width:225px;
+}
+.mask{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0px;
+    height:225px;
+    width:225px;
+    opacity: 0;
+    transition: all .5s ease;
+    color:rgb(7, 45, 117);
+}
+.por_div:hover .mask{
+    opacity: 1;
+
+}
+.mask a{
+    color:rgb(23, 80, 80);
+}
+.link a:hover{
+    color:rgb(108, 175, 175);
+    
+}
+.mask a:hover{
+    color:rgb(108, 175, 175);
 }
