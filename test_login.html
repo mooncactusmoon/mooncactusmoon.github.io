@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理者登入</title>
-    <link rel="stylesheet" href="./css/login.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- fontawesome -->
@@ -14,68 +14,49 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .aside{
-    position: fixed;
-    background-color: rgb(50, 50, 51);
-    top:0;
-    left:0;
-    width: 300px;
-    height:auto;
-}
+        .section {
+            background: url("../img/login_bg.jpg");
+            background-position: center;
+            background-size: cover;
+            /* 背景不隨著滾輪改變 */
+            background-attachment: fixed;
+            /* 螢幕可見範圍寬度的百分比 */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #login {
+            height: 500px;
+            border: 2px dashed #FFF;
+            background: rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 
 <body>
-    <div class="container_fluid">
-<!-- nav -->
-<div class="row shadow">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
-        <a class="navbar-brand" href="#"><img src="./img/logo1.png" alt="logo" width="35px" height="35px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="section">
+        <div class="container">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#login">Login</a>
-                       
+            <!-- login form -->
+            <div class="row">
+
+                <div class="col-sm-5 col-12 mt-5 mx-auto rounded" id="login">
+                    <form action="" class="text-center form-group form d-flex flex-column justify-content-center">
+                        <h2 class="my-5">L O G I N</h2>
+                        <input type="text" name="acc" id="acc" class="form-control mx-auto my-3 w-75"
+                            placeholder="請輸入帳號">
+                        <input type="password" name="pw" id="pw" class="form-control mx-auto my-3 w-75"
+                            placeholder="請輸入密碼">
+                        <button class="btn btn-dark mt-4 w-25 mx-auto">submit</button>
+                    </form>
+                    <div class="text-center mt-5">
+                        <a href="" class="btn btn-light">GO BACK</a>
                     </div>
-                </li>
-            </ul>
+                </div>
 
+            </div>
+            <!-- login form end-->
         </div>
-    </nav>
-</div>
-<!-- nav end -->
-
-     <!-- login form -->
-     <div class="row section">
-        <div class="col-sm-5 col-12"></div>
-        <div class="col-sm-2 col-12 mt-5 mx-auto" id="login">
-            <form action="" class="text-center form-group form d-flex flex-column justify-content-center">
-                <h2 class="mt-1">L O G I N</h2>
-                <input type="text" name="acc" id="acc" class="form-control mx-auto my-3 w-75" placeholder="請輸入帳號">
-                <input type="password" name="pw" id="pw" class="form-control mx-auto my-3 w-75" placeholder="請輸入密碼">
-                <button class="btn btn-outline-dark mt-4 w-25 mx-auto">submit</button>
-            </form>
-        </div>
-        <div class="col-sm-5 col-12"></div>
-    </div>
-    <!-- login form end-->
     </div>
 
 
@@ -89,7 +70,7 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 
-    
 </body>
+
 
 </html>

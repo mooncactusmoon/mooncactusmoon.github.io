@@ -1,8 +1,9 @@
 .container{
-    background: rgba(255,255,255,.3);
+    /* background: rgba(255,255,255,.3); */
+    color:rgb(2, 53, 40);
 }
 .main{
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.8);
 
 }
 li{
@@ -75,6 +76,13 @@ header{
     color:rgb(108, 175, 175);
     
 }
+.link2 a{
+    color:rgb(59, 72, 128);
+}
+.link2 a:hover{
+    color:rgb(77, 129, 129);
+    
+}
 .nav{
     color:rgb(197, 228, 230);
 }
@@ -100,6 +108,14 @@ header{
     display: none;
 }
 
+.title_p{
+    border-radius: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(7, 51, 39, 0.9); */
+    color:rgb(7, 51, 39);
+    text-shadow: -1px -1px white, 1px 1px #333;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
 .por_div{
     position: relative;
     height:225px;
