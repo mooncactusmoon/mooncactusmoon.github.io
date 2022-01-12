@@ -125,6 +125,7 @@ img{
     height:225px;
     width:225px;
 }
+
 .mask{
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
@@ -139,7 +140,6 @@ img{
 }
 .por_div:hover .mask{
     opacity: 1;
-
 }
 .mask a{
     /* color:rgb(23, 80, 80); */
