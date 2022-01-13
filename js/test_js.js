@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(".top").css("width",w+"px"); 
     $(".title").css("height",h+"px"); 
     $(".title").parent().css("opacity",0); 
-    $(".title").parent().animate({opacity:1},2000,function(){}); 
+    $(".title").parent().animate({opacity:1},3500,function(){}); 
 
     function load(){
         $("#loading").removeClass("loading");
