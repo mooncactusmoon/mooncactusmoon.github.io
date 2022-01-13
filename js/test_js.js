@@ -12,7 +12,7 @@ $(document).ready(function(){
     function load(){
         $("#loading").removeClass("loading");
     }
-    $("a").click(function(){
+    $(".aside a").click(function(){
         $("#loading").addClass("loading");
         setTimeout(load,400);
     })
