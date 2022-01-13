@@ -1,5 +1,16 @@
 $(document).ready(function(){
-    
+
+    $("div").click(function(){  //抓高度、寬長
+        var ww=$(this).offset().left;
+        var hh=$(this).offset().top;
+        console.log(ww);
+        console.log(hh);
+    })
+
+    // $(window).scroll(function () {
+    //     var scrollVal = $(this).scrollTop();
+    // });
+
     var h=$(window).height();//抓視窗高度
     var w=$(window).width();//抓視窗高度
     
