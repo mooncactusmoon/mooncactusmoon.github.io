@@ -118,7 +118,7 @@
     }
   }
 
-  
+
 .container{
     /* background: rgba(255,255,255,.3); */
     color:rgb(2, 53, 40);
@@ -234,12 +234,17 @@ img{
 }
 
 .title_p{
+    
     border-radius: 10%;
     background: rgba(255, 255, 255, 0.8);
     /* background: rgba(7, 51, 39, 0.9); */
     color:rgb(7, 51, 39);
     text-shadow: -1px -1px white, 1px 1px #333;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+.fa-angle-double-down{
+    animation: dong 2s infinite;
+    color:rgba(255, 255, 255, 0.1);
 }
 .por_div{
     position: relative;
@@ -275,7 +280,7 @@ img{
     color:rgb(23, 80, 80);
 }
 .card-body li:hover{
-    color:#ffe4e1;
+    color:#e4ffe1;
     font-size:30px;
 }
 
