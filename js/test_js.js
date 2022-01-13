@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     var h=$(window).height();//抓視窗高度
     var w=$(window).width();//抓視窗高度
     
@@ -8,7 +9,13 @@ $(document).ready(function(){
     $(".title").parent().css("opacity",0); 
     $(".title").parent().animate({opacity:1},2000,function(){}); 
 
-
+    function load(){
+        $("#loading").removeClass("loading");
+    }
+    $("a").click(function(){
+        $("#loading").addClass("loading");
+        setTimeout(load,400);
+    })
     
     $(".aside").css("height",h+"px"); 
     // $(".aside").fadeOut();
