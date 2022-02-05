@@ -1,0 +1,58 @@
+#top { scroll-behavior: smooth;    background: url("../img/top.jpg");
+  background-position: center;
+  background-size: cover;
+  /* 背景不隨著滾輪改變 */
+  background-attachment: fixed;
+  /* 螢幕可見範圍寬度的百分比 */
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; }
+.loading { position: fixed; z-index: 999; height: 2em; width: 2em; overflow: visible; margin: auto; inset: 0px; }
+.loading::before { content: ""; display: block; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(28, 28, 33, 0.9); }
+.loading:not(:required) { font: 0px / 0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0px; }
+.loading:not(:required)::after { content: ""; display: block; font-size: 10px; width: 1em; height: 1em; margin-top: -0.5em; animation: 1500ms linear 0s infinite normal none running spinner; border-radius: 0.5em; box-shadow: rgba(0, 230, 168, 0.75) 1.5em 0px 0px 0px, rgba(0, 230, 168, 0.75) 1.1em 1.1em 0px 0px, rgba(0, 230, 168, 0.75) 0px 1.5em 0px 0px, rgba(0, 230, 168, 0.75) -1.1em 1.1em 0px 0px, rgba(0, 230, 168, 0.75) -1.5em 0px 0px 0px, rgba(0, 230, 168, 0.75) -1.1em -1.1em 0px 0px, rgba(0, 230, 168, 0.75) 0px -1.5em 0px 0px, rgba(0, 230, 168, 0.75) 1.1em -1.1em 0px 0px; }
+@-webkit-keyframes spinner { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spinner { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.container { color: rgb(153, 230, 210); text-shadow: rgb(28, 28, 33) -1px -1px, rgb(51, 51, 51) 0px 0px; }
+.main { background: rgba(28, 28, 33, 0.8); }
+li { list-style: none; margin: 5px 0px; }
+.aside { position: fixed; background-color: rgb(51, 51, 51); top: 0px; right: 0px; width: 250px; height: auto; }
+.open_b { position: fixed; background-color: rgb(22, 90, 48); bottom: 30px; right: 30px; width: 40px; height: 40px; z-index: 995; color: rgb(153, 230, 182); }
+.close_b { position: fixed; background-color: rgb(87, 87, 87); bottom: 30px; right: 30px; width: 40px; height: 40px; z-index: 999; }
+@keyframes dong { 
+  0% { transform: translate(0px, 0px); }
+  50% { transform: translate(0px, 10px); }
+  100% { transform: translate(0px, 0px); }
+}
+header { font-size: 60px; color: rgb(224 255 239); text-shadow: rgb(134, 162, 140) -1px -1px 0px, rgb(134, 162, 140) 3px 3px 0px, rgb(134, 162, 140) 6px 6px 0px; animation: 2s ease 0s infinite normal none running dong; }
+img { box-shadow: rgb(51, 51, 51) 3px 3px 10px; }
+.i { transition: all 0.5s ease 0s; }
+.fa-github:hover { transform: rotate(-30deg); }
+.fa-envelope:hover { transform: rotate(-30deg); }
+.fa-instagram:hover { transform: rotate(-30deg); }
+.fa-address-card:hover {  transform: rotate(-30deg);}
+.link a { color: rgb(231, 249, 249); }
+.link a:hover { color: rgb(172, 210, 210); }
+.link2 a { color: rgb(168, 176, 215); }
+.link2 a:hover { color: rgb(175, 207, 207); }
+.nav { color: rgb(198, 228, 231); }
+.nav:hover { color: rgb(175, 206, 207); text-decoration: none; background-color: rgb(79, 79, 79); }
+
+#top::-webkit-scrollbar { display: none; }
+.title_p { border-radius: 10%; background: rgba(28, 28, 33, 0.8); color: rgb(153, 230, 209); text-shadow: rgb(28, 28, 33) -1px -1px, rgb(51, 51, 51) 1px 1px; box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 2px 1px; }
+.fa-angle-double-down { animation: 2s ease 0s infinite normal none running dong; color: rgba(255, 255, 255, 0.1); }
+.por_div { position: relative; height: 225px; width: 225px; }
+.mask { position: absolute; background: rgba(28, 28, 33, 0.9); box-shadow: rgb(0, 0, 0) 2px 2px 12px 1px; top: 0px; left: 0px; height: 225px; width: 225px; opacity: 0; transition: all 0.5s ease 0s; color: rgb(191, 208, 241); }
+.por_div:hover .mask { opacity: 1; }
+.mask a { color: rgb(172, 210, 210); }
+.link a:hover { color: rgb(172, 210, 210); }
+.mask a:hover { color: rgb(255, 255, 255); }
+.card-body li:hover { color: rgb(252, 255, 247); font-size: 30px; }
+.card { box-shadow: rgba(255, 255, 255, 0.8) 2px 2px 12px 1px; color: rgb(171, 230, 230); }
+footer { color: rgb(191, 191, 191); height: 80px; }
